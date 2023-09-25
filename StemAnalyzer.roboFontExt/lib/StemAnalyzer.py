@@ -2,7 +2,7 @@ from mojo.UI import *
 from AppKit import *
 
 import math
-import StemsAnalyzerModule as module
+import StemAnalyzerModule as module
 
 from mojo.subscriber import *
 import ezui
@@ -60,7 +60,7 @@ class StemAnalyzerWindow(Subscriber, ezui.WindowController):
 		)
 
 		self.w = ezui.EZWindow(
-            title="StemsAnalyzer",
+            title="StemAnalyzer",
 			content=content,
 			descriptionData=descriptionData,
 			controller=self

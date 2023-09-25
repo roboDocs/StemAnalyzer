@@ -33,7 +33,7 @@ if not os.path.exists(licensePath):
 pycOnly = False
 
 # name of the compiled extension file
-extensionFile = 'StemsAnalyzer.roboFontExt'
+extensionFile = 'StemAnalyzer.roboFontExt'
 
 # path of the compiled extension
 buildPath = basePath
@@ -43,7 +43,7 @@ extensionPath = os.path.join(buildPath, extensionFile)
 B = ExtensionBundle()
 
 # name of the extension
-B.name = "StemsAnalyser"
+B.name = "StemAnalyzer"
 
 # name of the developer
 B.developer = 'Jérémie Hornus and Connor Davenport'
@@ -63,7 +63,7 @@ B.version = '1.1.0'
 B.launchAtStartUp = False
 
 # script to be executed when RF starts
-B.mainScript = 'StemsAnalyzer.py'
+B.mainScript = 'StemAnalyzer.py'
 
 # does the extension contain html help files?
 B.html = htmlPath is not None
@@ -75,8 +75,8 @@ B.requiresVersionMinor = '3'
 # scripts which should appear in Extensions menu
 B.addToMenu = [
     {
-        'path' : 'StemsAnalyzer.py',
-        'preferredName': 'StemsAnalyzer',
+        'path' : 'StemAnalyzer.py',
+        'preferredName': 'StemAnalyzer',
         'shortKey' : '',
         #'shortKey' : (1179648, ']'),
     },

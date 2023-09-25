@@ -6,9 +6,9 @@
 	<array>
 		<dict>
 			<key>path</key>
-			<string>StemsAnalyzer.py</string>
+			<string>StemAnalyzer.py</string>
 			<key>preferredName</key>
-			<string>StemsAnalyzer</string>
+			<string>StemAnalyzer</string>
 			<key>shortKey</key>
 			<string></string>
 		</dict>
@@ -22,15 +22,15 @@
 	<key>launchAtStartUp</key>
 	<false/>
 	<key>mainScript</key>
-	<string>StemsAnalyzer.py</string>
+	<string>StemAnalyzer.py</string>
 	<key>name</key>
-	<string>StemsAnalyser</string>
+	<string>StemAnalyzer</string>
 	<key>requiresVersionMajor</key>
 	<string>4</string>
 	<key>requiresVersionMinor</key>
 	<string>3</string>
 	<key>timeStamp</key>
-	<real>1695643484.1852989</real>
+	<real>1695643921.2935848</real>
 	<key>version</key>
 	<string>1.1.0</string>
 </dict>
