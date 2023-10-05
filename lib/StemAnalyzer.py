@@ -59,7 +59,7 @@ class StemAnalyzerWindow(Subscriber, ezui.WindowController):
 			),
 		)
 
-		self.w = ezui.EZWindow(
+		self.w = ezui.EZPanel(
             title="StemAnalyzer",
 			content=content,
 			descriptionData=descriptionData,
@@ -440,39 +440,40 @@ def makeStemsList(f, g_hPoints, g, italicAngle):
 # ------------------------------
 
 f = CurrentFont()
-if f.info.italicAngle != None:
-	ital = - f.info.italicAngle
-else:
-	ital = 0
+if f:
+    if f.info.italicAngle != None:
+    	ital = - f.info.italicAngle
+    else:
+    	ital = 0
 
-if "O" in f.keys():
-	g = f['O']
-	O_hPoints = make_hPointsList(g)
-	(O_stemsListX, O_stemsListY) = makeStemsList(f, O_hPoints, g, ital)
-	Xs = []
-	for i in O_stemsListX:
-		Xs.append(i[2][0])
-	maxX = max(Xs)
-	maxStemX = maxX + 10*(maxX/100)
-	maxStemY = maxX + 10*(maxX/100)
-else:
-	print("WARNING: glyph 'O' missing")
+    if "O" in f.keys():
+    	g = f['O']
+    	O_hPoints = make_hPointsList(g)
+    	(O_stemsListX, O_stemsListY) = makeStemsList(f, O_hPoints, g, ital)
+    	Xs = []
+    	for i in O_stemsListX:
+    		Xs.append(i[2][0])
+    	maxX = max(Xs)
+    	maxStemX = maxX + 10*(maxX/100)
+    	maxStemY = maxX + 10*(maxX/100)
+    else:
+    	print("WARNING: glyph 'O' missing")
 
 
-if "o" in f.keys():
-	g = f['o']
-	if not g:
-		print("WARNING: glyph 'o' missing")
-	o_hPoints = make_hPointsList(g)
-	(o_stemsListX, o_stemsListY) = makeStemsList(f, o_hPoints, g, ital)
-	Ys = []
-	for i in o_stemsListY:
-		Ys.append(i[2][1])
-	minY = min(Ys)
-	minStemX = minY - 30*(minY/100)
-	minStemY = minY - 30*(minY/100)
-else:
-	print("WARNING: glyph 'o' missing")
+    if "o" in f.keys():
+    	g = f['o']
+    	if not g:
+    		print("WARNING: glyph 'o' missing")
+    	o_hPoints = make_hPointsList(g)
+    	(o_stemsListX, o_stemsListY) = makeStemsList(f, o_hPoints, g, ital)
+    	Ys = []
+    	for i in o_stemsListY:
+    		Ys.append(i[2][1])
+    	minY = min(Ys)
+    	minStemX = minY - 30*(minY/100)
+    	minStemY = minY - 30*(minY/100)
+    else:
+    	print("WARNING: glyph 'o' missing")
 # ------------------------------
 # ------------------------------
 # ------------------------------
