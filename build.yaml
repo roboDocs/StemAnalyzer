@@ -1,7 +1,7 @@
 libFolder: source/lib
 resourcesFolder: source/resources
 htmlFolder: source/html
-license: |
+license: | 
   MIT License
 
   Copyright (c) 2023 roboDocs
