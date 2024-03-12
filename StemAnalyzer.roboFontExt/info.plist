@@ -16,7 +16,7 @@
 	<key>developer</key>
 	<string>Jérémie Hornus and Connor Davenport</string>
 	<key>developerURL</key>
-	<string>https://black-foundry.com https://connordavenport.com</string>
+	<string>https://github.com/roboDocs/StemAnalyzer</string>
 	<key>html</key>
 	<false/>
 	<key>launchAtStartUp</key>
