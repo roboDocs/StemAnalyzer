@@ -49,7 +49,7 @@ B.name = "StemAnalyzer"
 B.developer = 'Jérémie Hornus and Connor Davenport'
 
 # URL of the developer
-B.developerURL = 'https://black-foundry.com https://connordavenport.com'
+B.developerURL = 'https://github.com/roboDocs/StemAnalyzer'
 
 if resourcesPath:
     # extension icon (file path or NSImage)
