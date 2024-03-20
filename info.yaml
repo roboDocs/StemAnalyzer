@@ -1,0 +1,13 @@
+name: StemAnalyzer
+developer: "Jérémie Hornus and Connor Davenport"
+developerURL: https://github.com/roboDocs/StemAnalyzer
+launchAtStartUp: false
+mainScript: StemAnalyzer.py
+version: 1.1.2
+addToMenu:
+- path: StemAnalyzer.py
+  preferredName: StemAnalyzer
+  shortKey: ''
+html: false
+requiresVersionMajor: '4'
+requiresVersionMinor: '3'
